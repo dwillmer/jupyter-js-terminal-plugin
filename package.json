@@ -56,8 +56,8 @@
   "phosphor-plugin": {
     "extensions": [
       {
-        "point": "ui:dockarea",
-        "loader": "loader"
+        "point": "menus:main",
+        "loader": "menuLoader"
       }
     ]
   },
