@@ -2,11 +2,9 @@
 // Distributed under the terms of the Modified BSD License.
 'use strict';
 
-
 import {
   Tab
 } from 'phosphor-tabs';
-
 
 var MENU = {
   items: [
