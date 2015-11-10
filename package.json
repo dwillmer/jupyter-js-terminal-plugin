@@ -9,8 +9,8 @@
     "phosphor-messaging": "^1.0.5",
     "phosphor-properties": "^1.1.0",
     "phosphor-widget": "^0.9.8",
-    "jupyter-js-terminal": "git+https://github.com/dwillmer/jupyter-js-terminal.git#blink-pr1",
-    "phosphor-plugins": "git://github.com/dwillmer/phosphor-plugins.git",
+    "jupyter-js-terminal": "git://github.com/jupyter/jupyter-js-terminal.git",
+    "phosphor-plugins": "git://github.com/phosphorjs/phosphor-plugins.git",
     "phosphor-tabs": "^0.9.8",
     "term.js": "0.0.7"
   },
@@ -60,10 +60,6 @@
       {
         "point": "menus:main",
         "loader": "menuLoader"
-      },
-      {
-        "point": "ui:main",
-        "loader": "uiLoader"
       }
     ]
   },
