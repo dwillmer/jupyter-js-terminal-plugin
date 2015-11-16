@@ -3,8 +3,13 @@
 'use strict';
 
 import {
+  IMenuExtension
+} from 'phosphide';
+
+import {
   Tab
 } from 'phosphor-tabs';
+
 
 var MENU = {
   items: [
@@ -15,7 +20,11 @@ var MENU = {
   ]
 };
 
+
+/**
+ * The loader function providing a menu extension.
+ */
 export
-function menuLoader(extension:any): Promise<any> {
+function menuLoader(): Promise<IMenuExtension> {
   return Promise.resolve(MENU);
 }
