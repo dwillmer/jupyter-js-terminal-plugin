@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "jupyter-js-terminal": "git://github.com/jupyter/jupyter-js-terminal.git",
+    "jupyter-js-terminal": "jupyter/jupyter-js-terminal",
+    "phosphide": "phosphorjs/phosphide",
     "phosphor-tabs": "^0.9.8"
   },
   "devDependencies": {

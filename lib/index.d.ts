@@ -1,1 +1,2 @@
-export declare function menuLoader(extension: any): Promise<any>;
+import { IMenuExtension } from 'phosphide';
+export declare function menuLoader(): Promise<IMenuExtension>;
