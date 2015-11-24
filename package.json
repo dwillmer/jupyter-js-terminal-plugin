@@ -53,6 +53,7 @@
   "phosphor-plugin": {
     "extensions": [
       {
+        "id": "jupyter-js-terminal-plugin:menu-extension",
         "point": "menus:main",
         "loader": "menuLoader"
       }
