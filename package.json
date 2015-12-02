@@ -6,8 +6,7 @@
   "typings": "lib/index.d.ts",
   "dependencies": {
     "jupyter-js-terminal": "jupyter/jupyter-js-terminal",
-    "phosphide": "phosphorjs/phosphide",
-    "phosphor-tabs": "^0.9.8"
+    "phosphide": "dwillmer/phosphide"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",

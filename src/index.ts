@@ -6,9 +6,6 @@ import {
   IMenuExtension
 } from 'phosphide';
 
-import {
-  Tab
-} from 'phosphor-tabs';
 
 var MENU = [
   {
