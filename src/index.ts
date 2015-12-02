@@ -18,7 +18,7 @@ var MENU = [
  * Plugin loader function for the menu.
  */
 export
-function menuLoader(): any {
+function createMenuContribution(): any {
   return {
     item: MENU,
     isDisposed: false,
