@@ -10,16 +10,21 @@ import {
   Tab
 } from 'phosphor-tabs';
 
-var MENU = {
-  items: [
-    {
-      location: ["New", "Terminal"],
-      command: "jupyter.new.terminal"
-    }
-  ]
-};
+var MENU = [
+  {
+    location: ["New", "Terminal"],
+    command: "jupyter.new.terminal"
+  }
+];
 
+/**
+ * Plugin loader function for the menu.
+ */
 export
-function menuLoader(): Promise<IMenuExtension> {
-  return Promise.resolve(MENU);
+function menuLoader(): any {
+  return {
+    item: MENU,
+    isDisposed: false,
+    dispose: () => {}
+  };
 }

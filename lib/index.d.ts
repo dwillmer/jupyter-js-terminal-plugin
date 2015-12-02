@@ -1,2 +1,4 @@
-import { IMenuExtension } from 'phosphide';
-export declare function menuLoader(): Promise<IMenuExtension>;
+/**
+ * Plugin loader function for the menu.
+ */
+export declare function menuLoader(): any;
