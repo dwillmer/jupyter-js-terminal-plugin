@@ -7,12 +7,10 @@ import {
 } from 'phosphide';
 
 
-var MENU = [
-  {
+var MENU = {
     location: ["New", "Terminal"],
     command: "jupyter.new.terminal"
-  }
-];
+  };
 
 /**
  * Plugin loader function for the menu.
