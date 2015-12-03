@@ -50,16 +50,6 @@
     "lib/*.d.ts",
     "lib/*.map"
   ],
-  "phosphor-plugin": {
-    "extensions": [
-      {
-        "main": "lib/index.js",
-        "id": "jupyter-js-terminal-plugin:menu-extension",
-        "point": "menus:main",
-        "factory": "createMenuContribution"
-      }
-    ]
-  },
   "author": "Project Jupyter",
   "license": "BSD-3-Clause",
   "bugs": {
