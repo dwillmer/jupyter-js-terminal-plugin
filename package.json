@@ -5,8 +5,8 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "jupyter-js-terminal": "git://github.com/jupyter/jupyter-js-terminal.git",
-    "phosphor-tabs": "^0.9.8"
+    "jupyter-js-terminal": "jupyter/jupyter-js-terminal",
+    "phosphor-plugins": "^0.4.0"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
@@ -50,14 +50,6 @@
     "lib/*.js",
     "lib/*.d.ts"
   ],
-  "phosphor-plugin": {
-    "extensions": [
-      {
-        "point": "menus:main",
-        "loader": "menuLoader"
-      }
-    ]
-  },
   "author": "Project Jupyter",
   "license": "BSD-3-Clause",
   "bugs": {

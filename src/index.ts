@@ -3,21 +3,27 @@
 'use strict';
 
 import {
-  IMenuExtension
-} from 'phosphide';
+  IContribution
+} from 'phosphor-plugins';
 
 import {
-  Tab
-} from 'phosphor-tabs';
+  TerminalWidget
+} from 'jupyter-js-terminal';
 
 
 var MENU = {
-  items: [
-    {
-      location: ["New", "Terminal"],
-      command: "jupyter.new.terminal"
-    }
-  ]
+  location: ["New", "Terminal"],
+  command: "jupyter.new.terminal"
+};
+
+
+let contribProto: IContribution = {
+  item: null,
+  isDisposed: false,
+  dispose: function() {
+    this.isDisposed = true;
+    this.item = null;
+  },
 };
 
 
@@ -25,6 +31,19 @@ var MENU = {
  * The loader function providing a menu extension.
  */
 export
-function menuLoader(): Promise<IMenuExtension> {
-  return Promise.resolve(MENU);
+function createMenuContribution(): IContribution {
+  let contrib = Object.create(contribProto);
+  contrib.item = MENU;
+  return contrib;
 }
+
+
+/**
+ * The loader function providing a UI extension.
+ */
+export
+function createUIContribution(): IContribution {
+  let contrib = Object.create(contribProto);
+  contrib.item = new TerminalWidget();
+  return contrib;
+};
