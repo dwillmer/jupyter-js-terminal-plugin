@@ -1,0 +1,16 @@
+{
+  "extensions": [
+    {
+      "main": "lib/index.js",
+      "id": "jupyter-js-terminal-plugin:menu-extension",
+      "point": "phosphide:ui:menubar",
+      "factory": "createMenuContribution"
+    },
+    {
+      "main": "lib/index.js",
+      "id": "jupyter-js-terminal-plugin:ui-extension",
+      "point": "phosphide:ui:main",
+      "factory": "createUIContribution"
+    }
+  ]
+}
